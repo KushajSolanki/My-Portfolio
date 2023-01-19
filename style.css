@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: black;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+    flex-wrap: wrap;
+    animation: animateColor 3s linear infinite;
+}
+
+.container span{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.container span::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    background: #a200ff;
+    box-shadow: 0 0 10px #ae00ff,
+                0 0 20px #ae00ff,
+                0 0 40px #ae00ff,
+                0 0 60px #ae00ff;
+    border-radius: 50%;
+    transition: 1s;
+    transform: scale(0);
+}
+.container span:hover::before{
+    transition: 0s;
+    transform: scale(1);
+
+}
+body{
+    background-color: linear-gradient(rgb(5, 5, 6),rgba(0, 0, 0, 0.985))
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    position: centre;
+    margin-bottom: 500px;
+    margin-right: 1250px;
+    cursor: pointer;
+    transition: transform 0.75s;
+}
+
+.logo:hover{
+    transform: translateY(-10px);
+}
+
+.dete1{
+    position: relative;
+    position: centre;
+    margin-left: -110%;
+    margin-top: -100%;
+    margin-right: 400px;
+    margin-bottom: -900px;
+}
+.dete1 h1{
+    font-size: 50px;
+    color: rgb(3, 141, 246);
+    margin-bottom: 50px;
+}
+.dete1 p{
+    font-size: 20px;
+    color: rgb(179, 74, 227);
+}
+span{
+    color: blueviolet;
+}
+.dete1 a{
+    background: linear-gradient(blueviolet,rgb(12, 12, 12));
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(27, 236, 255);
+    display: inline-block;
+    margin-top: 35px;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+.dete1 a:hover{
+    transform: translateY(-10px);
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.shape1{
+    width: 200px;
+    height: 500px;
+    margin-left: 70%;
+    margin-top: 10%;
+    transition: transform 1s;
+   
+}
+.shape1:hover{
+    transform: translateX(20px);
+
+}
+.shape2{
+    width: 200px;
+    height: 500px;
+    margin-right: 60%;
+    margin-top: -74%;
+    margin-bottom: 100%;
+    transition: transform 1s;
+}
+.shape2:hover{
+    transform: translateX(-20px);
+
+}
+.me{
+    height: 500px;
+    margin-top: -100%;
+    margin-left: -65%;
+    margin-bottom: 100%;
+    transition: transform 1s;
+}
+.me:hover{
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+    
+}
